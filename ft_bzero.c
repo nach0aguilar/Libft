@@ -1,30 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/12 15:24:43 by igaguila          #+#    #+#             */
-/*   Updated: 2023/09/15 18:28:38 by igaguila         ###   ########.fr       */
+/*   Created: 2023/09/15 16:10:56 by igaguila          #+#    #+#             */
+/*   Updated: 2023/09/15 18:25:53 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
 #include <stdio.h>
+#include <string.h>
 
-size_t  ft_strlen(const char *str)
+void    ft_bzero(void *s, size_t n)
 {
     size_t i;
 
     i = 0;
-    while (str[i])
+    while (i < n)
+    {
+        ((unsigned char*)s)[i] = 0;
         i++;
-    return(i);
+    }
 }
 
-/*int main()
+/*int	main(void)
 {
-    char *str = "hooola";
-    printf("%ld", ft_strlen(str));
+	char string[50];
+	strcpy(string, "caldodepollo");
+	puts(string);
+	ft_bzero(string, 0);
+	puts(string);
 }*/

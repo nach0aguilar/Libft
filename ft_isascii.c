@@ -6,7 +6,7 @@
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 16:43:13 by igaguila          #+#    #+#             */
-/*   Updated: 2023/09/14 18:21:17 by igaguila         ###   ########.fr       */
+/*   Updated: 2023/09/15 18:24:03 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,9 @@ int    ft_isascii(int c)
         return (0);
 }
 
-int main()
+/*int main()
 {
     char caracter = 'e';
     
     printf("%d", ft_isascii(caracter));
-}
+}*/

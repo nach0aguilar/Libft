@@ -1,30 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/12 15:24:43 by igaguila          #+#    #+#             */
-/*   Updated: 2023/09/15 18:28:38 by igaguila         ###   ########.fr       */
+/*   Created: 2023/09/15 18:47:06 by igaguila          #+#    #+#             */
+/*   Updated: 2023/09/15 18:47:07 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
-
-size_t  ft_strlen(const char *str)
-{
-    size_t i;
-
-    i = 0;
-    while (str[i])
-        i++;
-    return(i);
-}
-
-/*int main()
-{
-    char *str = "hooola";
-    printf("%ld", ft_strlen(str));
-}*/

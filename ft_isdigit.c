@@ -6,7 +6,7 @@
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 16:40:36 by igaguila          #+#    #+#             */
-/*   Updated: 2023/09/14 12:28:25 by igaguila         ###   ########.fr       */
+/*   Updated: 2023/09/15 18:24:10 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,3 +19,10 @@ int    ft_isdigit(int c)
     else
         return (0);
 }
+
+/*int main()
+{
+    char caracter = 'a';
+    
+    printf("%d", ft_isdigit(caracter));
+}*/
