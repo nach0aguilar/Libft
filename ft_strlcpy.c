@@ -1,38 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/14 12:21:14 by igaguila          #+#    #+#             */
-/*   Updated: 2023/09/16 13:50:54 by igaguila         ###   ########.fr       */
+/*   Created: 2023/09/16 14:13:32 by igaguila          #+#    #+#             */
+/*   Updated: 2023/09/16 14:18:57 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include <string.h>
 
-void	*ft_memset(void *b, int c, size_t len)
+size_t  ft_strlcpy(char *dst, const char *src, size_t size)
 {
-	size_t			i;
-	unsigned char	*newstr;
-
-	i = 0;
-	newstr = (unsigned char *)b;
-	while (i < len)
-	{
-		newstr[i] = (unsigned char)c;
-		i++;
-	}
-	return (b);
+    
 }
-
-/*int	main(void)
-{
-	char string[50];
-	strcpy(string, "caldodepollo");
-	puts(string);
-	ft_memset(string, 'c', 5);
-	puts(string);
-}*/

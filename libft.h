@@ -6,7 +6,7 @@
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/15 19:18:01 by igaguila          #+#    #+#             */
-/*   Updated: 2023/09/15 19:18:02 by igaguila         ###   ########.fr       */
+/*   Updated: 2023/09/16 14:20:01 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 # define LIBFT_H
 # include <stddef.h>
 
+size_t  ft_strlcpy(char *dst, const char *src, size_t size);
+void	*ft_memmove(void *dest, const void *src, size_t n);
 void    *ft_memcpy(void *restrict dst, const void *restrict src, size_t n);
 void	*ft_memset(void *b, int c, size_t len);
 void    ft_bzero(void *s, size_t n);
