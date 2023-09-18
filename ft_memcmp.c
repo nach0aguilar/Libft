@@ -1,42 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/18 13:13:36 by igaguila          #+#    #+#             */
-/*   Updated: 2023/09/18 20:47:05 by igaguila         ###   ########.fr       */
+/*   Created: 2023/09/18 18:54:55 by igaguila          #+#    #+#             */
+/*   Updated: 2023/09/18 19:19:09 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 #include <stdio.h>
 
-void    *ft_memchr(const void *s, int c, size_t n)
+int ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-    unsigned char *str;
     size_t  i;
+    const unsigned char *str1;
+    const unsigned char *str2;
 
-    str = (unsigned char*)s;
     i = 0;
-    while (str[i] && i < n)
-    {
-        if (str[i] == c)
-            return (&str[i]);
-        else
-            i++;
-    }
-    return (NULL);
+    str1 = (unsigned char*)s1;
+    str2 = (unsigned char*)s2;
+    while ((i < n) && (str1[i]) && (str2[i]) && (str1[i] == str2[i]))
+        i++;
+    return(str1[i] - str2[i]);
 }
 
-// int	main(void)
+// int main()
 // {
-// 	char string[] = "holografico";
-//     char *newstring = ft_memchr(string, 'o', 6);
-
-//     if(newstring != NULL)
-// 	    printf("%s\n", newstring);
-//     else
-//         printf("Nulo\n");
+//     char string1[] = "hola que tal";
+//     char string2[] = "hoaa que tal";
+    
+//     printf("%d\n", ft_memcmp(string1, string2, 3));
 // }
