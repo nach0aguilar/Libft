@@ -6,7 +6,7 @@
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/17 19:12:45 by igaguila          #+#    #+#             */
-/*   Updated: 2023/09/17 19:14:45 by igaguila         ###   ########.fr       */
+/*   Updated: 2023/09/18 13:26:12 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int ft_tolower(int c)
         return (c);
 }
 
-int main()
-{
-    printf("%c", ft_tolower('B'));
-}
+// int main()
+// {
+//     printf("%c", ft_tolower('B'));
+// }

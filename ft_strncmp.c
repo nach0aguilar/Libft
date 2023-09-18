@@ -1,27 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/17 18:52:18 by igaguila          #+#    #+#             */
-/*   Updated: 2023/09/18 13:26:17 by igaguila         ###   ########.fr       */
+/*   Created: 2023/09/18 12:53:47 by igaguila          #+#    #+#             */
+/*   Updated: 2023/09/18 13:25:03 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ctype.h>
+#include <string.h>
 #include <stdio.h>
 
-int ft_toupper(int c)
+int ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-    if (c >= 97 && c <= 122)
-        return (c - 32);
-    else
-        return (c);
+    size_t  i;
+
+    i = 0;
+    while ((i < n) && (s1[i]) && (s2[i]) && (s1[i] == s2[i]))
+        i++;
+    return(s1[i] - s2[i]);
 }
 
 // int main()
 // {
-//     printf("%c", ft_toupper('a'));
+//     char string1[] = "hola que tal";
+//     char string2[] = "hola que tal";
+    
+//     printf("%d\n", strncmp(string1, string2, 3));
 // }

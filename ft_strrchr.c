@@ -1,28 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/17 19:32:47 by igaguila          #+#    #+#             */
-/*   Updated: 2023/09/18 13:25:38 by igaguila         ###   ########.fr       */
+/*   Created: 2023/09/18 12:40:46 by igaguila          #+#    #+#             */
+/*   Updated: 2023/09/18 13:26:07 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <string.h>
 
-char	*ft_strchr(const char *s, int c)
+size_t  ft_strlen(const char *str)
+{
+    size_t i;
+
+    i = 0;
+    while (str[i])
+        i++;
+    return(i);
+}
+
+char	*ft_strrchr(const char *s, int c)
 {
 	int		i;
 	int		j;
 	char	*newstring;
 
-	i = 0;
+	i = ft_strlen(s);
 	
     newstring = (char *)s;
-	while (s[i])
+	while (i >= 0)
 	{
 		j = 0;
 		if (s[i] == c)
@@ -37,7 +47,7 @@ char	*ft_strchr(const char *s, int c)
 			return (newstring);
 		}
 		else
-			i++;
+			i--;
 	}
 	return (NULL);
 }
@@ -45,5 +55,5 @@ char	*ft_strchr(const char *s, int c)
 // int	main(void)
 // {
 // 	char string[] = "holografico";
-// 	printf("%s\n", ft_strchr(string, 'a'));
+// 	printf("%s\n", strrchr(string, 'a'));
 // }
