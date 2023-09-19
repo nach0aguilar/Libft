@@ -6,7 +6,7 @@
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/15 19:18:01 by igaguila          #+#    #+#             */
-/*   Updated: 2023/09/19 18:09:56 by igaguila         ###   ########.fr       */
+/*   Updated: 2023/09/19 23:40:29 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define LIBFT_H
 # include <stddef.h>
 
+char    *ft_strdup(const char *s);
 void	*calloc(size_t count, size_t size);
 int     ft_atoi(const char *str);
 char    *ft_strnstr(const char *big, const char *little, size_t len);
