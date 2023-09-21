@@ -23,6 +23,7 @@ char    *start(char const *str, char const *set)
 
     newstr = (char *)str;
     i = 0;
+    j = 0;
     while(newstr[i])
     {
         while(set[j])
@@ -85,8 +86,8 @@ char    *ft_strtrim(char const *s1, char const *set)
     return(trim);
 }
 
-int main()
-{
-    char string[] = "sdkholaksd";
-    printf("%s\n", ft_strtrim(string, "sd"));
-}
+// int main()
+// {
+//     char string[] = "sdkholaksd";
+//     printf("%s\n", ft_strtrim(string, "sd"));
+// }
