@@ -6,13 +6,13 @@
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 12:40:46 by igaguila          #+#    #+#             */
-/*   Updated: 2023/09/23 15:58:31 by igaguila         ###   ########.fr       */
+/*   Updated: 2023/09/23 17:19:45 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stdio.h>
 #include <string.h>
-#include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)
 {
@@ -21,8 +21,7 @@ char	*ft_strrchr(const char *s, int c)
 	char	*newstring;
 
 	i = ft_strlen(s);
-	
-    newstring = (char *)s;
+	newstring = (char *)s;
 	while (i >= 0)
 	{
 		j = 0;

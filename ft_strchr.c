@@ -6,7 +6,7 @@
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/17 19:32:47 by igaguila          #+#    #+#             */
-/*   Updated: 2023/09/18 13:25:38 by igaguila         ###   ########.fr       */
+/*   Updated: 2023/09/23 17:17:56 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,7 @@ char	*ft_strchr(const char *s, int c)
 	char	*newstring;
 
 	i = 0;
-	
-    newstring = (char *)s;
+	newstring = (char *)s;
 	while (s[i])
 	{
 		j = 0;

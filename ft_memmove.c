@@ -6,13 +6,13 @@
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/15 18:47:06 by igaguila          #+#    #+#             */
-/*   Updated: 2023/09/16 13:51:11 by igaguila         ###   ########.fr       */
+/*   Updated: 2023/09/23 17:17:04 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 
-void	*ft_memmove(void *dest, const void *src, size_t n)
-{
+// void	*ft_memmove(void *dest, const void *src, size_t n)
+// {
 
-}
+// }

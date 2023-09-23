@@ -6,7 +6,7 @@
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/21 12:58:52 by igaguila          #+#    #+#             */
-/*   Updated: 2023/09/23 15:55:28 by igaguila         ###   ########.fr       */
+/*   Updated: 2023/09/23 17:17:44 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ char	**ft_split(char const *s, char c)
 		if (s[0] == c)
 			i++;
 		while (!(s[i] == c || s[i] == '\0'))
-			array[x][y++] = s[i++];	
+			array[x][y++] = s[i++];
 		if (s[i] == c && s[i - 1] != c)
 		{
 			array[x][y] = 0;
@@ -41,7 +41,7 @@ char	**ft_split(char const *s, char c)
 			i++;
 		}
 		if (s[i] == c)
-			i++;	
+			i++;
 	}
 	array[x][y] = 0;
 	array[++x] = 0;
