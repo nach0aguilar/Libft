@@ -6,7 +6,7 @@
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 12:40:46 by igaguila          #+#    #+#             */
-/*   Updated: 2023/09/23 17:19:45 by igaguila         ###   ########.fr       */
+/*   Updated: 2023/09/23 19:04:29 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ char	*ft_strrchr(const char *s, int c)
 				j++;
 				i++;
 			}
-			newstring[i] = '\0';
+			newstring[i] = 0;
 			return (newstring);
 		}
 		else
@@ -42,8 +42,8 @@ char	*ft_strrchr(const char *s, int c)
 	return (NULL);
 }
 
-// int	main(void)
-// {
-// 	char string[] = "holografico";
-// 	printf("%s\n", strrchr(string, 'a'));
-// }
+int	main(void)
+{
+	char string[] = "holografico";
+	printf("%s\n", ft_strrchr(string, 'a'));
+}
