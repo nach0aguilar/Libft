@@ -6,7 +6,7 @@
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/21 12:58:52 by igaguila          #+#    #+#             */
-/*   Updated: 2023/09/23 12:09:24 by igaguila         ###   ########.fr       */
+/*   Updated: 2023/09/23 15:55:28 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,15 +48,15 @@ char	**ft_split(char const *s, char c)
 	return (array);
 }
 
-int	main(void)
-{
-	char string[] = "  hola que tal como estas";
-	char **lista = ft_split(string, ' ');
-	int i = 0;
+// int	main(void)
+// {
+// 	char string[] = "hola que tal como estas";
+// 	char **lista = ft_split(string, ' ');
+// 	int i = 0;
 
-	while (lista[i])
-	{
-		printf("%s\n", lista[i]);
-		i++;
-	}
-}
+// 	while (lista[i])
+// 	{
+// 		printf("%s\n", lista[i]);
+// 		i++;
+// 	}
+// }

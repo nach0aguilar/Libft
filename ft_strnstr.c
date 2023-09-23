@@ -6,7 +6,7 @@
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 20:10:09 by igaguila          #+#    #+#             */
-/*   Updated: 2023/09/19 15:22:06 by igaguila         ###   ########.fr       */
+/*   Updated: 2023/09/23 15:56:12 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,15 +43,15 @@ char    *ft_strnstr(const char *big, const char *little, size_t len)
         return (NULL);
 }
 
-int main()
-{
-    char *bigs = "hola soy ManManolo";
-    char *lits = "a";
+// int main()
+// {
+//     char *bigs = "hola soy ManManolo";
+//     char *lits = "a";
     
-    char *resultado = strnstr(bigs, lits, 18);
+//     char *resultado = strnstr(bigs, lits, 18);
 
-    if(resultado != NULL)
-	    printf("%s\n", resultado);
-    else
-        printf("Nulo\n");
-}
+//     if(resultado != NULL)
+// 	    printf("%s\n", resultado);
+//     else
+//         printf("Nulo\n");
+// }

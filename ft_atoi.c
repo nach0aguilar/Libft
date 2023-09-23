@@ -6,7 +6,7 @@
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/19 15:23:36 by igaguila          #+#    #+#             */
-/*   Updated: 2023/09/19 17:45:11 by igaguila         ###   ########.fr       */
+/*   Updated: 2023/09/23 15:55:19 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ int     ft_atoi(const char *str)
     return ((int)(sign * num));
 }
 
-int main()
-{
-    printf("%d", ft_atoi("-4555"));
-}
+// int main()
+// {
+//     printf("%d", ft_atoi("-4555"));
+// }

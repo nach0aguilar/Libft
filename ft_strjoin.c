@@ -6,7 +6,7 @@
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 11:30:36 by igaguila          #+#    #+#             */
-/*   Updated: 2023/09/20 12:21:27 by igaguila         ###   ########.fr       */
+/*   Updated: 2023/09/23 15:55:49 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,10 +41,10 @@ char *ft_strjoin(char const *s1, char const *s2)
     return (new);
 }
 
-int main()
-{
-    char string1[] = "hola ";
-    char string2[] = "que tal";
+// int main()
+// {
+//     char string1[] = "hola ";
+//     char string2[] = "que tal";
     
-    printf("%s\n", ft_strjoin(string1, string2));
-}
+//     printf("%s\n", ft_strjoin(string1, string2));
+// }
