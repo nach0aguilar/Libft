@@ -6,7 +6,7 @@
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 11:30:36 by igaguila          #+#    #+#             */
-/*   Updated: 2023/09/23 17:18:46 by igaguila         ###   ########.fr       */
+/*   Updated: 2023/09/23 17:50:33 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	i = 0;
 	j = 0;
 	newlen = ft_strlen(s1) + ft_strlen(s2);
-	if (!(new = malloc(sizeof(char) * newlen + 1)))
+	new = malloc(sizeof(char) * newlen + 1);
+	if (!new)
 		return (NULL);
 	while (s1[i])
 	{

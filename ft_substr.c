@@ -6,7 +6,7 @@
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 08:59:15 by igaguila          #+#    #+#             */
-/*   Updated: 2023/09/23 17:20:48 by igaguila         ###   ########.fr       */
+/*   Updated: 2023/09/23 17:51:59 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 	i = 0;
 	j = 0;
-	if (!(new = malloc(sizeof(char) * (len + 1))) || !s)
+	new = malloc(sizeof(char) * (len + 1));
+	if (!new || !s)
 		return (NULL);
 	while (s[i])
 	{

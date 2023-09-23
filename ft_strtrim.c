@@ -2,7 +2,7 @@
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
-/*         ç                                           +:+ +:+        
+/*         ç                                           +:+ +:+
 	+:+     */
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -74,7 +74,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 
 	trimstart = start(s1, set);
 	trimend = end(trimstart, set);
-	if (!(trim = malloc(sizeof(char) * (trimend + 1))))
+	trim = malloc(sizeof(char) * (trimend + 1));
+	if (!trim)
 		return (NULL);
 	i = 0;
 	while (i < trimend)

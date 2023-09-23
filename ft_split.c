@@ -6,7 +6,7 @@
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/21 12:58:52 by igaguila          #+#    #+#             */
-/*   Updated: 2023/09/23 17:17:44 by igaguila         ###   ########.fr       */
+/*   Updated: 2023/09/23 17:49:04 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,11 +23,13 @@ char	**ft_split(char const *s, char c)
 	i = 0;
 	x = 0;
 	y = 0;
-	if (!(array = (char **)malloc(50 * sizeof(char *))))
+	array = (char **)malloc(50 * sizeof(char *));
+	if (!array)
 		return (NULL);
 	while (s[i])
 	{
-		if (!(array[x] = (char *)malloc(5)))
+		array[x] = (char *)malloc(5);
+		if (!array[x])
 			return (NULL);
 		if (s[0] == c)
 			i++;
