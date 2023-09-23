@@ -6,7 +6,7 @@
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/21 12:58:52 by igaguila          #+#    #+#             */
-/*   Updated: 2023/09/21 20:01:31 by igaguila         ###   ########.fr       */
+/*   Updated: 2023/09/23 12:09:24 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,27 +29,34 @@ char	**ft_split(char const *s, char c)
 	{
 		if (!(array[x] = (char *)malloc(5)))
 			return (NULL);
-		while (!(s[i] == c || s[i] == '\0'))
-			array[x][y++] = s[i++];
-		while (s[i] == c || s[i] == '\0')
-		{
+		if (s[0] == c)
 			i++;
+		while (!(s[i] == c || s[i] == '\0'))
+			array[x][y++] = s[i++];	
+		if (s[i] == c && s[i - 1] != c)
+		{
+			array[x][y] = 0;
 			x++;
 			y = 0;
+			i++;
 		}
-		array[x][y] = 0;
-		
+		if (s[i] == c)
+			i++;	
 	}
-	array[x] = 0;
+	array[x][y] = 0;
+	array[++x] = 0;
 	return (array);
 }
 
 int	main(void)
 {
-	char string[] = " hola que tal";
+	char string[] = "  hola que tal como estas";
 	char **lista = ft_split(string, ' ');
+	int i = 0;
 
-	printf("%s\n", lista[0]);
-	printf("%s\n", lista[1]);
-	printf("%s\n", lista[2]);
+	while (lista[i])
+	{
+		printf("%s\n", lista[i]);
+		i++;
+	}
 }
