@@ -6,7 +6,7 @@
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 13:13:36 by igaguila          #+#    #+#             */
-/*   Updated: 2023/09/23 17:16:14 by igaguila         ###   ########.fr       */
+/*   Updated: 2023/09/24 19:59:14 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	i = 0;
 	while (str[i] && i < n)
 	{
-		if (str[i] == c)
+		if (str[i] == (unsigned char)c)
 			return (&str[i]);
 		else
 			i++;

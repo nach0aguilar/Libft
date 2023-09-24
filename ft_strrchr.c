@@ -6,7 +6,7 @@
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 12:40:46 by igaguila          #+#    #+#             */
-/*   Updated: 2023/09/24 12:31:47 by igaguila         ###   ########.fr       */
+/*   Updated: 2023/09/24 15:09:16 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,8 @@ char	*ft_strrchr(const char *s, int c)
 	return (NULL);
 }
 
-int	main(void)
-{
-	char string[] = "teste";
-	printf("%s\n", ft_strrchr(string, '\0'));
-}
+// int	main(void)
+// {
+// 	char string[] = "teste";
+// 	printf("%s\n", ft_strrchr(string, '\0'));
+// }
