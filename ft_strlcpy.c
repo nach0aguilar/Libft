@@ -6,7 +6,7 @@
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/16 14:13:32 by igaguila          #+#    #+#             */
-/*   Updated: 2023/09/23 17:19:12 by igaguila         ###   ########.fr       */
+/*   Updated: 2023/09/24 14:08:33 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,22 +19,20 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 
 	i = 0;
 	if (size == 0)
-		return (sizeof(src));
+		return (strlen(src));
 	while (i < (size - 1) && src[i])
 	{
 		dst[i] = src[i];
 		i++;
 	}
 	dst[i] = '\0';
-	return (sizeof(src));
+	return (strlen(src));
 }
-/*
-int	main(void)
-{
-	char source[] = "Hola que tal";
-	char dest[15];
 
-	strlcpy(dest, source, sizeof(dest));
+// int	main(void)
+// {
+// 	char source[] = "Hola que tal";
+// 	char dest[15];
 
-	printf("%s\n", dest);
-}*/
+// 	printf("%ld\n", ft_strlcpy(dest, source, sizeof(dest)));
+// }

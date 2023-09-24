@@ -6,7 +6,7 @@
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 12:40:46 by igaguila          #+#    #+#             */
-/*   Updated: 2023/09/23 19:04:29 by igaguila         ###   ########.fr       */
+/*   Updated: 2023/09/24 12:31:47 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,25 +17,14 @@
 char	*ft_strrchr(const char *s, int c)
 {
 	int		i;
-	int		j;
 	char	*newstring;
 
 	i = ft_strlen(s);
 	newstring = (char *)s;
 	while (i >= 0)
 	{
-		j = 0;
 		if (s[i] == c)
-		{
-			while (s[i - 1])
-			{
-				newstring[j] = s[i];
-				j++;
-				i++;
-			}
-			newstring[i] = 0;
-			return (newstring);
-		}
+			return (&newstring[i]);
 		else
 			i--;
 	}
@@ -44,6 +33,6 @@ char	*ft_strrchr(const char *s, int c)
 
 int	main(void)
 {
-	char string[] = "holografico";
-	printf("%s\n", ft_strrchr(string, 'a'));
+	char string[] = "teste";
+	printf("%s\n", ft_strrchr(string, '\0'));
 }
