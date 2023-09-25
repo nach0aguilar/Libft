@@ -6,7 +6,7 @@
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 18:54:55 by igaguila          #+#    #+#             */
-/*   Updated: 2023/09/24 23:23:48 by igaguila         ###   ########.fr       */
+/*   Updated: 2023/09/25 12:05:33 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 		return (0);
 	while ((i < n - 1) && (str1[i]) && (str2[i]) && (str1[i] == str2[i]))
 		i++;
-	return ((unsigned char)str1[i] - (unsigned char)str2[i]);
+	return (str1[i] - str2[i]);
 }
 
 // int main()

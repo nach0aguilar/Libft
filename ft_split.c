@@ -6,53 +6,49 @@
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/21 12:58:52 by igaguila          #+#    #+#             */
-/*   Updated: 2023/09/23 17:49:04 by igaguila         ###   ########.fr       */
+/*   Updated: 2023/09/25 22:49:44 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <stdlib.h>
 
+char *make_word(char const *s, char c, int pos)
+{
+	char *str;
+	
+	
+}
+
 char	**ft_split(char const *s, char c)
 {
 	int		i;
-	int		x;
-	int		y;
+	int		j;
 	char	**array;
 
 	i = 0;
-	x = 0;
-	y = 0;
+	j = 0;
 	array = (char **)malloc(50 * sizeof(char *));
 	if (!array)
 		return (NULL);
 	while (s[i])
 	{
-		array[x] = (char *)malloc(5);
-		if (!array[x])
-			return (NULL);
-		if (s[0] == c)
-			i++;
-		while (!(s[i] == c || s[i] == '\0'))
-			array[x][y++] = s[i++];
-		if (s[i] == c && s[i - 1] != c)
-		{
-			array[x][y] = 0;
-			x++;
-			y = 0;
-			i++;
-		}
 		if (s[i] == c)
 			i++;
+		else
+		{
+			array[j] = make_word(s, c, i);
+			i += ft_strlen(array[j++]);
+		}
 	}
-	array[x][y] = 0;
-	array[++x] = 0;
+	array[j] = 0;
+	//array[x] = 0;
 	return (array);
 }
 
 // int	main(void)
 // {
-// 	char string[] = "hola que tal como estas";
+// 	char string[] = "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse";
 // 	char **lista = ft_split(string, ' ');
 // 	int i = 0;
 
