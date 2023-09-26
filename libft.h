@@ -6,13 +6,13 @@
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/15 19:18:01 by igaguila          #+#    #+#             */
-/*   Updated: 2023/09/25 11:47:52 by igaguila         ###   ########.fr       */
+/*   Updated: 2023/09/26 14:44:11 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
-# include <stddef.h>
+# include <stdlib.h>
 
 char	**ft_split(char const *s, char c);
 char	*ft_strtrim(char const *s1, char const *set);

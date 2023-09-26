@@ -6,12 +6,11 @@
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/21 12:58:52 by igaguila          #+#    #+#             */
-/*   Updated: 2023/09/26 12:18:57 by igaguila         ###   ########.fr       */
+/*   Updated: 2023/09/26 15:08:07 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
-#include <stdlib.h>
 #include "libft.h"
 
 static int	words(char const *s, char c)
@@ -53,7 +52,8 @@ static char *make_word(char const *s, char c, int pos)
 		return (0);
 	while (s[i] != c)
 		str[j++] = s[i++];
-	return (str);	
+	str[j] = 0;
+	return (str);
 }
 
 char	**ft_split(char const *s, char c)
@@ -83,13 +83,7 @@ char	**ft_split(char const *s, char c)
 
 // int	main(void)
 // {
-// 	char string[] = "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse";
-// 	char **lista = ft_split(string, ' ');
-// 	int i = 0;
-
-// 	while (lista[i])
-// 	{
-// 		printf("%s\n", lista[i]);
-// 		i++;
-// 	}
+// 	char *str = "dafafsga";
+// 	char **newstr = ft_split(str, ',');
+// 	printf("%s\n", newstr[0]);
 // }
