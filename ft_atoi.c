@@ -6,7 +6,7 @@
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/19 15:23:36 by igaguila          #+#    #+#             */
-/*   Updated: 2023/09/23 17:27:00 by igaguila         ###   ########.fr       */
+/*   Updated: 2023/09/26 23:00:22 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,10 +32,7 @@ int	ft_atoi(const char *str)
 		i++;
 	}
 	while (str[i] >= '0' && str[i] <= '9')
-	{
-		num = num * 10 + (str[i] - '0');
-		i++;
-	}
+		num = num * 10 + (str[i++] - '0');
 	return ((int)(sign * num));
 }
 
