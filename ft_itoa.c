@@ -6,11 +6,12 @@
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/26 17:28:38 by igaguila          #+#    #+#             */
-/*   Updated: 2023/09/26 23:32:27 by igaguila         ###   ########.fr       */
+/*   Updated: 2023/09/27 13:40:21 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
 int digits_number(int n)
 {
@@ -18,9 +19,9 @@ int digits_number(int n)
 	
 	i = 0;
 	if (n < 0)
-		n *= -1;
+		i++;
 	
-	while (n > 0)
+	while (n != 0)
 	{
 		n /= 10;
 		i++;
@@ -37,21 +38,30 @@ char    *ft_itoa(int n)
 	
 	digits = digits_number(n);
 	i = digits;
-	if (n < 0)
-	{
-		digits++;
-		str[i] = "-";
-		n *= -1;
-		i++;
-	}
-	str = malloc(sizeof(char) * (digits + 1));
+	str = (char *)malloc(sizeof(char) * (digits + 2));
 	if (!str)
 		return (0);
-	
+	if (n == 0)
+		return("0");
+	if(n == -2147483648)
+		return ("-2147483648");
+	if (n < 0)
+	{
+		str[0] = '-';
+		n *= -1;
+	}
+	str[i] = 0;
 	while (n > 0)
 	{
-		str[i--] = (n % 10) + '0';
+		str[--i] = (n % 10) + '0';
 		n /= 10;
 	}
 	return (str);
 }
+
+// int main()
+// {
+// 	char *res = ft_itoa(9);
+//     puts(res);
+//     free(res);
+// }
