@@ -6,12 +6,23 @@
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/21 12:58:52 by igaguila          #+#    #+#             */
-/*   Updated: 2023/09/30 17:51:38 by igaguila         ###   ########.fr       */
+/*   Updated: 2023/09/30 20:30:07 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
+
+static char	**memory_clear(char **array, int words)
+{
+	while (words >= 0)
+	{
+		free(array[words]);
+		words--;
+	}
+	free(array);
+	return (0);
+}
 
 static int	words(char const *s, char c)
 {
@@ -73,6 +84,8 @@ char	**ft_split(char const *s, char c)
 		else
 		{
 			array[j] = make_word(s, c, i);
+			if (!array[j])
+				return(memory_clear(array, j), NULL);
 			i += ft_strlen(array[j++]);
 		}
 	}
