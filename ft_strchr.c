@@ -6,7 +6,7 @@
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/17 19:32:47 by igaguila          #+#    #+#             */
-/*   Updated: 2023/09/24 12:46:20 by igaguila         ###   ########.fr       */
+/*   Updated: 2023/09/30 11:41:03 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,17 +18,19 @@ char	*ft_strchr(const char *s, int c)
 {
 	int		i;
 	char	*newstring;
+	char	chr;
 
 	i = 0;
+	chr = (char)c;
 	newstring = (char *)s;
 	while (s[i])
 	{
-		if (s[i] == c)
+		if (s[i] == chr)
 			return (&newstring[i]);
 		else
 			i++;
 	}
-	if (newstring[i] == c)
+	if (newstring[i] == chr)
 		return(&newstring[i]);
 	return (NULL);
 }
