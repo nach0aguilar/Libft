@@ -6,7 +6,7 @@
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 20:10:09 by igaguila          #+#    #+#             */
-/*   Updated: 2023/09/30 12:13:34 by igaguila         ###   ########.fr       */
+/*   Updated: 2023/09/30 17:59:58 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	slittle = (char *)little;
 	i = 0;
 	if (!little[i])
-		return(&sbig[i]);
+		return (&sbig[i]);
 	while (sbig[i] && i < len)
 	{
 		j = 0;
@@ -51,7 +51,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 //     char *resultado = ft_strnstr(bigs, lits, 15);
 
 //     if(resultado != NULL)
-// 		 printf("%s\n", resultado);
+// 			printf("%s\n", resultado);
 //     else
 //         printf("Nulo\n");
 // }

@@ -6,7 +6,7 @@
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 08:59:15 by igaguila          #+#    #+#             */
-/*   Updated: 2023/09/30 13:45:40 by igaguila         ###   ########.fr       */
+/*   Updated: 2023/09/30 18:00:21 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	i = 0;
 	j = 0;
 	if (start >= ft_strlen(s))
-        return (ft_strdup(""));
+		return (ft_strdup(""));
 	if (start + len > ft_strlen(s))
 		len = ft_strlen(s) - start;
 	new = (char *)malloc(sizeof(char) * (len + 1));
@@ -41,26 +41,6 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	new[j] = '\0';
 	return (new);
 }
-// char    *ft_substr(char const *s, unsigned int start, size_t len)
-// {
-//     unsigned int    i;
-//     char            *substr;
-//     unsigned int    s_len;
-
-//     s_len = (unsigned int)ft_strlen((char *)s);
-//     if (start >= s_len)
-//         return (ft_strdup(""));
-//     if (start + len > s_len)
-//         len = s_len - start;
-//     substr = (char *)malloc(sizeof(char) * len + 1);
-//     if (!substr || !s)
-//         return (NULL);
-//     i = -1;
-//     while (++i < (unsigned int)len)
-//         substr[i] = s[start + i];
-//     substr[i] = '\0';
-//     return (substr);
-// }
 
 // int	main(void)
 // {

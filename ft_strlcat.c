@@ -6,7 +6,7 @@
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/17 17:54:21 by igaguila          #+#    #+#             */
-/*   Updated: 2023/09/24 15:06:41 by igaguila         ###   ########.fr       */
+/*   Updated: 2023/09/30 17:59:18 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,6 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	size_t	dst_size;
 	size_t	src_size;
 	size_t	size_result;
-	
 
 	i = 0;
 	dst_size = ft_strlen(dst);

@@ -6,19 +6,19 @@
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/26 17:28:38 by igaguila          #+#    #+#             */
-/*   Updated: 2023/09/27 20:43:07 by igaguila         ###   ########.fr       */
+/*   Updated: 2023/09/30 18:15:15 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
 
-int digits_number(int n)
+int	digits_number(long int n)
 {
-	int	i;
-	
+	long int	i;
+
 	i = 0;
-	if(n == 0)
+	if (n == 0)
 		return (1);
 	if (n < 0)
 		i++;
@@ -26,25 +26,25 @@ int digits_number(int n)
 	{
 		n /= 10;
 		i++;
-	}	
+	}
 	return (i);
 }
 
-char    *ft_itoa(int n)
+char	*ft_itoa(int n)
 {
-    int     i;
+	int		i;
 	int		digits;
-    char    *str;
-	
+	char	*str;
+
 	digits = digits_number(n);
 	i = digits;
+	if (n == -2147483648)
+		return (ft_strdup("-2147483648"));
 	str = (char *)malloc(sizeof(char) * (digits + 1));
 	if (!str)
 		return (0);
 	if (n == 0)
-	 	str[0] = '0';
-	if (n == -2147483648)
-		return ("-2147483648");
+		str[0] = '0';
 	if (n < 0)
 	{
 		str[0] = '-';

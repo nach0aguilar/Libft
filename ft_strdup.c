@@ -6,7 +6,7 @@
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/19 23:20:27 by igaguila          #+#    #+#             */
-/*   Updated: 2023/09/30 12:23:55 by igaguila         ###   ########.fr       */
+/*   Updated: 2023/09/30 17:48:45 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,10 @@
 
 char	*ft_strdup(const char *s)
 {
-	unsigned int		i;
-	char	*copy;
+	unsigned int	i;
+	char			*copy;
 
-	if(!s)
+	if (!s)
 		return (NULL);
 	copy = (char *)malloc(sizeof(char) * (ft_strlen(s) + 1));
 	i = 0;

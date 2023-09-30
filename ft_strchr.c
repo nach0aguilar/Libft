@@ -6,7 +6,7 @@
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/17 19:32:47 by igaguila          #+#    #+#             */
-/*   Updated: 2023/09/30 11:41:03 by igaguila         ###   ########.fr       */
+/*   Updated: 2023/09/30 17:48:34 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ char	*ft_strchr(const char *s, int c)
 			i++;
 	}
 	if (newstring[i] == chr)
-		return(&newstring[i]);
+		return (&newstring[i]);
 	return (NULL);
 }
 

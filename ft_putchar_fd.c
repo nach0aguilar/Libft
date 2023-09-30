@@ -6,13 +6,13 @@
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 11:43:46 by igaguila          #+#    #+#             */
-/*   Updated: 2023/09/28 11:48:20 by igaguila         ###   ########.fr       */
+/*   Updated: 2023/09/30 17:58:16 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void    ft_putchar_fd(char c, int fd)
+void	ft_putchar_fd(char c, int fd)
 {
-    write(fd, &c, 1);
+	write(fd, &c, 1);
 }

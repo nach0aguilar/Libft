@@ -6,19 +6,19 @@
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/21 12:58:52 by igaguila          #+#    #+#             */
-/*   Updated: 2023/09/27 19:49:20 by igaguila         ###   ########.fr       */
+/*   Updated: 2023/09/30 17:51:38 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include "libft.h"
+#include <stdio.h>
 
 static int	words(char const *s, char c)
 {
 	int	words;
-	int inword;
-	int i;
-	
+	int	inword;
+	int	i;
+
 	words = 0;
 	inword = 0;
 	i = 0;
@@ -36,19 +36,18 @@ static int	words(char const *s, char c)
 	return (words);
 }
 
-static char *make_word(char const *s, char c, int pos)
+static char	*make_word(char const *s, char c, int pos)
 {
-	int i;
-	int j;
-	char *str;
-	
+	int		i;
+	int		j;
+	char	*str;
+
 	j = 0;
 	i = pos;
 	while (s[pos] != c)
 		pos++;
-	
 	str = malloc(sizeof(char) * (pos - i + 1));
-	if(!str)
+	if (!str)
 		return (0);
 	while (s[i] != c)
 		str[j++] = s[i++];
