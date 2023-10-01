@@ -15,33 +15,31 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-char	*start(char const *str, char const *set)
+unsigned int	start(char const *str, char const *set)
 {
-	unsigned int	i;
+	unsigned int	len;
 	unsigned int	j;
-	char			*newstr;
 
-	newstr = (char *)str;
-	i = 0;
+	len = 0;
 	j = 0;
-	while (newstr[i])
+	while (str[len])
 	{
 		while (set[j])
 		{
-			if (set[j] == newstr[i])
+			if (set[j] == str[len])
 			{
-				i++;
+				len++;
 				j = 0;
 			}
 			else
 				j++;
 		}
-		return (&newstr[i]);
+		return (len);
 	}
-	return (NULL);
+	return (0);
 }
 
-unsigned int	end(char *str, char const *set)
+unsigned int	end(char const *str, char const *set)
 {
 	unsigned int	len;
 	unsigned int	j;
@@ -68,27 +66,30 @@ unsigned int	end(char *str, char const *set)
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	unsigned int	i;
-	char			*trimstart;
+	unsigned int	trimstart;
 	unsigned int	trimend;
 	char			*trim;
 
+	if (s1[0] == '\0')
+		return (ft_strdup(""));
+	if (set == NULL)
+		return (ft_strdup(s1));
 	trimstart = start(s1, set);
-	trimend = end(trimstart, set);
-	trim = malloc(sizeof(char) * (trimend + 1));
+	trimend = end(s1, set);
+	if (trimstart >= trimend)
+		return (ft_strdup(""));
+	trim = malloc(sizeof(char) * (trimend - trimstart + 1));
 	if (!trim)
 		return (NULL);
 	i = 0;
-	while (i < trimend)
-	{
-		trim[i] = trimstart[i];
-		i++;
-	}
+	while (trimstart < trimend)
+		trim[i++] = s1[trimstart++];
 	trim[i] = '\0';
 	return (trim);
 }
 
 // int main()
 // {
-//     char string[] = "sdkholaksd";
-//     printf("%s\n", ft_strtrim(string, "sd"));
+//     char string[] = "";
+//     printf("%s\n", ft_strtrim(string, "sdsd"));
 // }

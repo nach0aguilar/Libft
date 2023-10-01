@@ -6,23 +6,13 @@
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/17 17:54:21 by igaguila          #+#    #+#             */
-/*   Updated: 2023/09/30 17:59:18 by igaguila         ###   ########.fr       */
+/*   Updated: 2023/10/01 22:51:42 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
 #include <string.h>
-
-// size_t  ft_strlen(const char *str)
-// {
-//     size_t i;
-
-//     i = 0;
-//     while (str[i])
-//         i++;
-//     return(i);
-// }
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {

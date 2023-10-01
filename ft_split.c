@@ -6,22 +6,21 @@
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/21 12:58:52 by igaguila          #+#    #+#             */
-/*   Updated: 2023/09/30 20:30:07 by igaguila         ###   ########.fr       */
+/*   Updated: 2023/10/01 22:54:20 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
 
-static char	**memory_clear(char **array, int words)
+static void	memory_clear(char **array, int words)
 {
-	while (words >= 0)
+	while (words > -1)
 	{
 		free(array[words]);
 		words--;
 	}
 	free(array);
-	return (0);
 }
 
 static int	words(char const *s, char c)
@@ -68,7 +67,7 @@ static char	*make_word(char const *s, char c, int pos)
 
 char	**ft_split(char const *s, char c)
 {
-	size_t	i;
+	int		i;
 	int		j;
 	char	**array;
 
@@ -85,7 +84,10 @@ char	**ft_split(char const *s, char c)
 		{
 			array[j] = make_word(s, c, i);
 			if (!array[j])
-				return(memory_clear(array, j), NULL);
+			{
+				memory_clear(array, j);
+				return (0);
+			}
 			i += ft_strlen(array[j++]);
 		}
 	}
@@ -95,7 +97,7 @@ char	**ft_split(char const *s, char c)
 
 // int	main(void)
 // {
-// 	char *str = "dafafsga";
-// 	char **newstr = ft_split(str, ',');
+// 	char *str = "hello!";
+// 	char **newstr = ft_split(str, 'x');
 // 	printf("%s\n", newstr[0]);
 // }
