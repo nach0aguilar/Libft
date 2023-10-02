@@ -6,7 +6,7 @@
 #    By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/15 19:18:15 by igaguila          #+#    #+#              #
-#    Updated: 2023/10/02 12:41:58 by igaguila         ###   ########.fr        #
+#    Updated: 2023/10/02 13:10:11 by igaguila         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -43,7 +43,7 @@ all: ${NAME}
 	${CC} ${CFLAGS} -c $< -o $@
 
 $(NAME): ${OBJS} ${BONUS_OBJS}
-	ar -rcs ${NAME} ${OBJS} ${BONUS_OBJS}
+	ar rcs ${NAME} ${OBJS} ${BONUS_OBJS}
 
 bonus: $(BONUS_OBJS)
 	ar rcs $(NAME) $(BONUS_OBJS)
