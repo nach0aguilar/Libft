@@ -6,14 +6,14 @@
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/21 12:58:52 by igaguila          #+#    #+#             */
-/*   Updated: 2023/10/01 22:54:20 by igaguila         ###   ########.fr       */
+/*   Updated: 2023/10/02 12:04:20 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
 
-static void	memory_clear(char **array, int words)
+static char	**memory_clear(char **array, int words)
 {
 	while (words > -1)
 	{
@@ -21,6 +21,7 @@ static void	memory_clear(char **array, int words)
 		words--;
 	}
 	free(array);
+	return (0);
 }
 
 static int	words(char const *s, char c)
@@ -54,12 +55,12 @@ static char	*make_word(char const *s, char c, int pos)
 
 	j = 0;
 	i = pos;
-	while (s[pos] != c)
+	while (s[pos] && s[pos] != c)
 		pos++;
 	str = malloc(sizeof(char) * (pos - i + 1));
 	if (!str)
 		return (0);
-	while (s[i] != c)
+	while (s[i] && s[i] != c)
 		str[j++] = s[i++];
 	str[j] = 0;
 	return (str);
@@ -84,10 +85,7 @@ char	**ft_split(char const *s, char c)
 		{
 			array[j] = make_word(s, c, i);
 			if (!array[j])
-			{
-				memory_clear(array, j);
-				return (0);
-			}
+				return (memory_clear(array, j));
 			i += ft_strlen(array[j++]);
 		}
 	}

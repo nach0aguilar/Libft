@@ -36,7 +36,7 @@ unsigned int	start(char const *str, char const *set)
 		}
 		return (len);
 	}
-	return (0);
+	return (len);
 }
 
 unsigned int	end(char const *str, char const *set)
@@ -45,10 +45,10 @@ unsigned int	end(char const *str, char const *set)
 	unsigned int	j;
 
 	len = ft_strlen(str);
-	j = 0;
-	while (len + 1 > 0)
+	while (len > 0)
 	{
-		while (set[j])
+		j = 0;
+		while (set[j] && len - 1 != 0)
 		{
 			if (set[j] == str[len - 1])
 			{
@@ -60,7 +60,7 @@ unsigned int	end(char const *str, char const *set)
 		}
 		return (len);
 	}
-	return (0);
+	return (len);
 }
 
 char	*ft_strtrim(char const *s1, char const *set)
@@ -90,6 +90,6 @@ char	*ft_strtrim(char const *s1, char const *set)
 
 // int main()
 // {
-//     char string[] = "";
-//     printf("%s\n", ft_strtrim(string, "sdsd"));
+//     char string[] = "s  d s  d";
+//     printf("%s\n", ft_strtrim(string, " sd"));
 // }

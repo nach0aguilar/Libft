@@ -6,7 +6,7 @@
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 20:10:09 by igaguila          #+#    #+#             */
-/*   Updated: 2023/10/01 19:36:25 by igaguila         ###   ########.fr       */
+/*   Updated: 2023/10/02 12:10:26 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,14 +25,13 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	while (big[i])
 	{
 		j = 0;
-		while (big[i] == little[j] && i < len && big[i]) 
+		while (big[i] == little[j] && i < len && big[i])
 		{
 			i++;
 			j++;
 		}
 		if (!little[j])
 			return ((char *)&big[i - j]);
-			
 		i = (i - j) + 1;
 	}
 	return (NULL);
