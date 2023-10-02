@@ -6,12 +6,11 @@
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 13:13:36 by igaguila          #+#    #+#             */
-/*   Updated: 2023/09/30 12:00:21 by igaguila         ###   ########.fr       */
+/*   Updated: 2023/10/02 21:12:30 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
@@ -30,14 +29,3 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
-
-// int	main(void)
-// {
-// 	char string[] = "holografico";
-//     char *newstring = ft_memchr(string, 'o', 6);
-
-//     if(newstring != NULL)
-// 		 printf("%s\n", newstring);
-//     else
-//         printf("Nulo\n");
-// }

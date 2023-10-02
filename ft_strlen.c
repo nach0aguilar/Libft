@@ -6,12 +6,11 @@
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/12 15:24:43 by igaguila          #+#    #+#             */
-/*   Updated: 2023/09/23 17:19:20 by igaguila         ###   ########.fr       */
+/*   Updated: 2023/10/02 21:19:47 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
 size_t	ft_strlen(const char *str)
 {
@@ -22,9 +21,3 @@ size_t	ft_strlen(const char *str)
 		i++;
 	return (i);
 }
-
-/*int main()
-{
-	char *str = "hooola";
-	printf("%ld", ft_strlen(str));
-}*/

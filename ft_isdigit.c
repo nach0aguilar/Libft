@@ -6,11 +6,11 @@
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 16:40:36 by igaguila          #+#    #+#             */
-/*   Updated: 2023/09/23 17:15:56 by igaguila         ###   ########.fr       */
+/*   Updated: 2023/10/02 21:11:42 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_isdigit(int c)
 {
@@ -19,10 +19,3 @@ int	ft_isdigit(int c)
 	else
 		return (0);
 }
-
-/*int main()
-{
-	char caracter = 'a';
-
-	printf("%d", ft_isdigit(caracter));
-}*/

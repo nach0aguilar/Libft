@@ -6,9 +6,11 @@
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 11:20:22 by igaguila          #+#    #+#             */
-/*   Updated: 2023/09/30 17:49:44 by igaguila         ###   ########.fr       */
+/*   Updated: 2023/10/02 21:17:35 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {

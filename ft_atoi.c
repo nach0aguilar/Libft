@@ -6,13 +6,11 @@
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/19 15:23:36 by igaguila          #+#    #+#             */
-/*   Updated: 2023/09/26 23:00:22 by igaguila         ###   ########.fr       */
+/*   Updated: 2023/10/02 21:23:57 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 int	ft_atoi(const char *str)
 {
@@ -35,8 +33,3 @@ int	ft_atoi(const char *str)
 		num = num * 10 + (str[i++] - '0');
 	return ((int)(sign * num));
 }
-
-// int main()
-// {
-//     printf("%d", ft_atoi("-4555"));
-// }

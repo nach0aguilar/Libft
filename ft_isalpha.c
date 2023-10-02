@@ -6,11 +6,11 @@
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 16:11:56 by igaguila          #+#    #+#             */
-/*   Updated: 2023/09/23 17:32:17 by igaguila         ###   ########.fr       */
+/*   Updated: 2023/10/02 21:11:15 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_isalpha(int c)
 {
@@ -19,9 +19,3 @@ int	ft_isalpha(int c)
 	else
 		return (0);
 }
-/*int main()
-{
-	char caracter = '8';
-
-	printf("%d", ft_isalpha(caracter));
-}*/

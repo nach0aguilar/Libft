@@ -6,12 +6,11 @@
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 12:24:33 by igaguila          #+#    #+#             */
-/*   Updated: 2023/09/30 17:58:29 by igaguila         ###   ########.fr       */
+/*   Updated: 2023/10/02 21:15:57 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <unistd.h>
 
 void	ft_putnbr_fd(int n, int fd)
 {

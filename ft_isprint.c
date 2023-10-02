@@ -6,11 +6,11 @@
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 18:27:22 by igaguila          #+#    #+#             */
-/*   Updated: 2023/09/23 17:16:05 by igaguila         ###   ########.fr       */
+/*   Updated: 2023/10/02 21:24:15 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_isprint(int c)
 {
@@ -19,10 +19,3 @@ int	ft_isprint(int c)
 	else
 		return (0);
 }
-
-/*int main()
-{
-	char caracter = 'e';
-
-	printf("%d", ft_isprint(caracter));
-}*/

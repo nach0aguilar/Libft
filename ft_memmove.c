@@ -6,12 +6,11 @@
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/15 18:47:06 by igaguila          #+#    #+#             */
-/*   Updated: 2023/09/30 17:58:08 by igaguila         ###   ########.fr       */
+/*   Updated: 2023/10/02 21:14:05 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {

@@ -6,13 +6,11 @@
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/17 17:54:21 by igaguila          #+#    #+#             */
-/*   Updated: 2023/10/01 22:51:42 by igaguila         ###   ########.fr       */
+/*   Updated: 2023/10/02 21:24:42 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <string.h>
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
@@ -38,13 +36,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	dst[dst_size + i] = '\0';
 	return (size_result);
 }
-
-// int main()
-// {
-// 	char source[] = "nacho";
-// 	char dest[] = "hola";
-
-// 	ft_strlcat(dest, source, 2);
-
-// 	printf("%s\n", dest);
-// }

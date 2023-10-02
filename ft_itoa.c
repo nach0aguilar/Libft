@@ -6,14 +6,13 @@
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/26 17:28:38 by igaguila          #+#    #+#             */
-/*   Updated: 2023/09/30 18:15:15 by igaguila         ###   ########.fr       */
+/*   Updated: 2023/10/02 21:12:02 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
-int	digits_number(long int n)
+static int	digits_number(long int n)
 {
 	long int	i;
 
@@ -58,10 +57,3 @@ char	*ft_itoa(int n)
 	}
 	return (str);
 }
-
-// int main()
-// {
-// 	char *res = ft_itoa(9);
-//     puts(res);
-//     free(res);
-// }

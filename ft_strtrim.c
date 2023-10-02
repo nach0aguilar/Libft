@@ -12,10 +12,8 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <stdlib.h>
 
-unsigned int	start(char const *str, char const *set)
+static unsigned int	start(char const *str, char const *set)
 {
 	unsigned int	len;
 	unsigned int	j;
@@ -39,7 +37,7 @@ unsigned int	start(char const *str, char const *set)
 	return (len);
 }
 
-unsigned int	end(char const *str, char const *set)
+static unsigned int	end(char const *str, char const *set)
 {
 	unsigned int	len;
 	unsigned int	j;
@@ -87,9 +85,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	trim[i] = '\0';
 	return (trim);
 }
-
-// int main()
-// {
-//     char string[] = "s  d s  d";
-//     printf("%s\n", ft_strtrim(string, " sd"));
-// }

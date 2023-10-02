@@ -6,12 +6,11 @@
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/21 12:58:52 by igaguila          #+#    #+#             */
-/*   Updated: 2023/10/02 12:04:20 by igaguila         ###   ########.fr       */
+/*   Updated: 2023/10/02 21:16:23 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 static char	**memory_clear(char **array, int words)
 {
@@ -92,10 +91,3 @@ char	**ft_split(char const *s, char c)
 	array[j] = 0;
 	return (array);
 }
-
-// int	main(void)
-// {
-// 	char *str = "hello!";
-// 	char **newstr = ft_split(str, 'x');
-// 	printf("%s\n", newstr[0]);
-// }

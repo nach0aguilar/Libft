@@ -6,12 +6,11 @@
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 12:21:14 by igaguila          #+#    #+#             */
-/*   Updated: 2023/09/17 18:13:33 by igaguila         ###   ########.fr       */
+/*   Updated: 2023/10/02 21:14:18 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
 void	*ft_memset(void *b, int c, size_t len)
 {
@@ -27,12 +26,3 @@ void	*ft_memset(void *b, int c, size_t len)
 	}
 	return (b);
 }
-
-/*int	main(void)
-{
-	char string[50];
-	strcpy(string, "caldodepollo");
-	puts(string);
-	ft_memset(string, 'c', 5);
-	puts(string);
-}*/

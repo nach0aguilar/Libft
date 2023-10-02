@@ -6,12 +6,11 @@
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/17 19:12:45 by igaguila          #+#    #+#             */
-/*   Updated: 2023/09/23 17:20:58 by igaguila         ###   ########.fr       */
+/*   Updated: 2023/10/02 21:22:02 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ctype.h>
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_tolower(int c)
 {
@@ -20,8 +19,3 @@ int	ft_tolower(int c)
 	else
 		return (c);
 }
-
-// int main()
-// {
-//     printf("%c", ft_tolower('B'));
-// }

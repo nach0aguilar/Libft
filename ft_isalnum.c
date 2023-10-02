@@ -6,11 +6,11 @@
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 16:41:43 by igaguila          #+#    #+#             */
-/*   Updated: 2023/09/23 17:27:56 by igaguila         ###   ########.fr       */
+/*   Updated: 2023/10/02 21:11:03 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_isalnum(int c)
 {
@@ -20,10 +20,3 @@ int	ft_isalnum(int c)
 	else
 		return (0);
 }
-
-/*int main()
-{
-	char caracter = '+';
-
-	printf("%d", ft_isalnum(caracter));
-}*/

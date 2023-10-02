@@ -6,13 +6,11 @@
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 08:59:15 by igaguila          #+#    #+#             */
-/*   Updated: 2023/09/30 18:00:21 by igaguila         ###   ########.fr       */
+/*   Updated: 2023/10/02 21:21:49 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
@@ -41,9 +39,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	new[j] = '\0';
 	return (new);
 }
-
-// int	main(void)
-// {
-// 	char string[] = "lorem ipsum dolor";
-// 	printf("%s\n", ft_substr(string, 0, 10));
-// }

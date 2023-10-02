@@ -6,13 +6,11 @@
 /*   By: igaguila <igaguila@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/17 19:32:47 by igaguila          #+#    #+#             */
-/*   Updated: 2023/09/30 17:48:34 by igaguila         ###   ########.fr       */
+/*   Updated: 2023/10/02 21:17:20 by igaguila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <string.h>
 
 char	*ft_strchr(const char *s, int c)
 {
@@ -34,9 +32,3 @@ char	*ft_strchr(const char *s, int c)
 		return (&newstring[i]);
 	return (NULL);
 }
-
-// int	main(void)
-// {
-// 	char string[] = "bonjour";
-// 	printf("%s\n", ft_strchr(string, 'b'));
-// }
